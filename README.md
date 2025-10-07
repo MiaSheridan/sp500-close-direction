@@ -1,36 +1,46 @@
 
-SPY Price Movement Prediction (2015–2025)
+# SPY Price Movement Prediction (2015–2025) 📈
 
-This project aims to predict whether the S&P 500 (SPY ETF) will close higher or lower the next day using historical price data.
-It’s a binary classification problem, where the target variable is 1 if tomorrow’s close > today’s, and 0 otherwise.
+Predicting whether the S&P 500 ETF (SPY) will close **higher or lower the next day** using historical price data. This is a **binary classification problem**:
 
-Project Overview
+- **1** → Tomorrow’s close > Today’s close  
+- **0** → Tomorrow’s close ≤ Today’s close  
 
-Data Collection:
+---
 
-Historical SPY data downloaded using yfinance from 2015 to 2025.
+## Project Overview
 
-Feature Engineering:
+### 1. Data Collection
+- Historical SPY data from **2015 to 2025** downloaded using **yfinance**.
 
-Created financial indicators such as daily returns, moving averages, volatility, and momentum.
+### 2. Feature Engineering
+- Created financial indicators including:
+  - Daily returns  
+  - Moving averages (short & long term)  
+  - Volatility measures  
+  - Momentum indicators  
 
-Exploratory Analysis:
+### 3. Exploratory Data Analysis
+- Visualized price trends and return distributions  
+- Built a **correlation heatmap** to examine relationships between features and the target  
 
-Visualized price trends and return distributions.
+### 4. Model Preparation
+- Split dataset into **training (80%)** and **testing (20%)** sets  
+- Preprocessed data for supervised learning  
 
-Built a correlation heatmap to examine relationships between features and target.
+### 5. Next Steps
+- Train and evaluate machine learning models:
+  - **Logistic Regression**  
+  - **Random Forest**  
+  - **LSTM (Long Short-Term Memory networks)**  
 
-Model Preparation:
+---
 
-Split data into training (80%) and testing (20%) sets for supervised learning.
+## Technologies Used
+- **Python 3.10**  
+- Libraries:
+  - `pandas`, `numpy` (data manipulation)  
+  - `matplotlib`, `seaborn` (visualization)  
+  - `yfinance` (data download)  
+  - `scikit-learn` (ML models)  
 
-Next Steps:
-
-Trained models such as Logistic Regression, Random Forest, and LSTM to predict the target variable.
-
-Technologies Used
-
-Python 3.10
-
-Libraries:
-pandas, numpy, matplotlib, seaborn, yfinance, scikit-learn
